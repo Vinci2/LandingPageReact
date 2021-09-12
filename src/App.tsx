@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
+import AppHeader from "./domains/AppHeader/AppHeader";
+import AppBody from "./domains/AppBody/AppBody";
 
 function App() {
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+  useEffect(() => {
+    window.addEventListener("scroll", (e: any) => {
+      setScrolledToTop(!e.target.scrollingElement.scrollTop);
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppHeader isScrolledToTop={scrolledToTop}></AppHeader>
+      <AppBody></AppBody>
     </div>
   );
 }

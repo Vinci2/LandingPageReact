@@ -1,0 +1,27 @@
+.main-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 40px;
+}
+
+.columns-container {
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    margin: 20px;
+  }
+}
+
+.description-container {
+  width: 40%;
+}
+
+.image-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.image {
+  width: 100%;
+}
