@@ -1,0 +1,21 @@
+@import "variables";
+
+.main-container {
+  width: 350px;
+  height: 400px;
+  background-color: $contrast-text-color;
+  color: $secondary-color;
+  text-align: center;
+  border-radius: 20px;
+  margin: 20px auto;
+}
+
+.icon {
+  width: 50px;
+  margin-top: 25px;
+}
+
+.description {
+  padding: 10px;
+  font-size: 18px;
+}
