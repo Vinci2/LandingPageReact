@@ -1,0 +1,21 @@
+.container {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  animation-duration: 2s;
+  transition-duration: 1s;
+}
+
+.animate {
+  transition: all 0.3s cubic-bezier(0.38, 0.46, 0, 2);
+}
+
+.move-left {
+  transform: translate(-500px, 0px);
+}
+
+.move-right {
+  transform: translate(500px, 0px);
+}

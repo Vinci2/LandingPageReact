@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixins";
+
+$headerTransition: all 0.5s ease-out;
+
+.header-container {
+  @include header-shadow;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+  background-color: $secondary-color;
+  padding: 10px 10%;
+  box-sizing: border-box;
+}
+
+.home-header {
+  background-color: $transparent;
+  padding: 30px 10%;
+  height: 170px;
+  box-shadow: initial;
+
+}
+
+.animate {
+  -webkit-transition: $headerTransition;
+  -moz-transition: $headerTransition;
+  -o-transition: $headerTransition;
+  transition: $headerTransition;
+}
+
+@media (max-width: $sm) {
+  .home-header,
+  .header-container {
+    @include header-shadow;
+    background-color: $secondary-color;
+    transition-duration: 0s;
+    height: 100px;
+    padding: 10px 10%;
+  }
+}
+
+.nav-container {
+  @include header-shadow;
+}
