@@ -20,37 +20,19 @@
   background-color: $secondary-color;
 }
 
-.main-title {
-  color: $contrast-text-color;
-  margin-bottom: 10px;
-}
-
 .welcome-container {
   margin-top: 220px;
   z-index: 10;
   position: relative;
   text-align: center;
   color: $contrast-text-color;
-}
 
-.main-background-img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  h1 {
+    color: $contrast-text-color;
+    margin-bottom: 10px;
+  }
 
-.card {
-  color: white;
-  z-index: 10;
-  width: 500px;
-  left: 30px;
-  margin-top: 18%;
-  margin-left: 5%;
-  position: relative;
-  text-align: left;
-  font-size: 20px;
-}
-
-.welcome-msg-container {
+  Button {
+    margin-top: 80px;
+  }
 }
